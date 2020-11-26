@@ -4,9 +4,9 @@ import random
 from lib import create_message
 
 
-line_token = "Line Token"
+line_token = os.environ['LINE_TOKEN']
 Service_account_json_file = 'json_file.json'
-calendarId = 'calendarId'
+calendarId = os.environ['CALENDARID']
             
 
 def lambda_handler(event, context):
